@@ -16,8 +16,6 @@ The visual design is up to you — there are no mockups. Angular Material is set
 
 Treat this as a real production screen — what would you want to handle if this shipped tomorrow?
 
-When you are done, open a pull request against this repository.
-
 Have fun.
 
 ## API
