@@ -1,0 +1,16 @@
+{
+  "printWidth": 120,
+  "semi": false,
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "singleAttributePerLine": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ]
+}

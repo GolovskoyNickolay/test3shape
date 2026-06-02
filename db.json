@@ -1,0 +1,72 @@
+{
+  "clinic": {
+    "name": "Sunrise 3D Dental Clinic",
+    "description": "Family dental clinic offering general dentistry, cosmetic procedures, and orthodontics since 2008.",
+    "address": "123 Smile Street, Wellness City",
+    "phone": "+1 (555) 010-0100",
+    "email": "hello@sunrise.clinic",
+    "workingHours": "Mon–Fri 08:00–18:00, Sat 09:00–14:00"
+  },
+  "stats": {
+    "total": 6,
+    "today": 1,
+    "upcoming": 4,
+    "completed": 1
+  },
+  "appointments": [
+    {
+      "id": 1,
+      "patientName": "John Doe",
+      "patientPhone": "+1 (555) 234-5678",
+      "patientEmail": "john.doe@example.com",
+      "scheduledAt": "2026-05-15T10:00:00Z",
+      "reason": "Routine cleaning",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "patientName": "Jane Smith",
+      "patientPhone": "+1 (555) 345-6789",
+      "patientEmail": "jane.smith@example.com",
+      "scheduledAt": "2026-05-27T11:30:00Z",
+      "reason": "Cavity filling",
+      "status": "scheduled"
+    },
+    {
+      "id": 3,
+      "patientName": "Michael Brown",
+      "patientPhone": "+1 (555) 456-7890",
+      "patientEmail": "michael.brown@example.com",
+      "scheduledAt": "2026-06-03T14:00:00Z",
+      "reason": "Crown placement",
+      "status": "scheduled"
+    },
+    {
+      "id": 4,
+      "patientName": "Emily Davis",
+      "patientPhone": "+1 (555) 567-8901",
+      "patientEmail": "emily.davis@example.com",
+      "scheduledAt": "2026-06-10T09:15:00Z",
+      "reason": "Orthodontic consultation",
+      "status": "scheduled"
+    },
+    {
+      "id": 5,
+      "patientName": "Robert Wilson",
+      "patientPhone": "+1 (555) 678-9012",
+      "patientEmail": "robert.wilson@example.com",
+      "scheduledAt": "2026-06-17T16:45:00Z",
+      "reason": "Wisdom tooth extraction",
+      "status": "scheduled"
+    },
+    {
+      "id": 6,
+      "patientName": "Olivia Martin",
+      "patientPhone": "+1 (555) 789-0123",
+      "patientEmail": "olivia.martin@example.com",
+      "scheduledAt": "2026-05-08T12:00:00Z",
+      "reason": "Teeth whitening",
+      "status": "cancelled"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+:host {
+  height: 100%;
+}
+
+.sidebar {
+  &__brand {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--mat-sys-primary);
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  &__logo {
+    width: 40px;
+    height: auto;
+  }
+
+  &__brand-name {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__nav-container {
+    padding: 8px;
+  }
+}

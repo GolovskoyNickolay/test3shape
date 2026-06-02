@@ -1,0 +1,106 @@
+<div class="home">
+  @switch (status()) {
+    @case ('loaded') {
+      @if (clinic(); as info) {
+        <div class="home__clinic-container">
+          <mat-card
+            appearance="outlined"
+            class="home__clinic"
+          >
+            <mat-card-header>
+              <mat-card-title>
+                {{ info.name }}
+              </mat-card-title>
+
+              <mat-card-subtitle>
+                {{ info.workingHours }}
+              </mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+              <p class="home__description">
+                {{ info.description }}
+              </p>
+
+              <mat-divider />
+
+              <div class="home__details">
+                <div class="home__details-item">
+                  <mat-icon class="home__details-item-icon">location_on</mat-icon>
+                  <div class="home__details-item-text">
+                    <div class="home__details-item-label">Address</div>
+                    <div class="home__details-item-value">
+                      {{ info.address }}
+                    </div>
+                  </div>
+                </div>
+                <div class="home__details-item">
+                  <mat-icon class="home__details-item-icon">call</mat-icon>
+                  <div class="home__details-item-text">
+                    <div class="home__details-item-label">Phone</div>
+                    <div class="home__details-item-value">
+                      {{ info.phone }}
+                    </div>
+                  </div>
+                </div>
+                <div class="home__details-item">
+                  <mat-icon class="home__details-item-icon">mail</mat-icon>
+                  <div class="home__details-item-text">
+                    <div class="home__details-item-label">Email</div>
+                    <div class="home__details-item-value">
+                      {{ info.email }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      }
+
+      @if (stats()) {
+        <div class="home__stats-container">
+          @for (tile of tiles(); track tile.label) {
+            <mat-card
+              appearance="outlined"
+              class="home__tile"
+            >
+              <div class="home__tile-header">
+                <mat-icon class="home__tile-icon">
+                  {{ tile.icon }}
+                </mat-icon>
+
+                <span class="home__tile-label">
+                  {{ tile.label }}
+                </span>
+              </div>
+
+              <div class="home__tile-value">
+                {{ tile.value }}
+              </div>
+            </mat-card>
+          }
+        </div>
+      }
+    }
+
+    @case ('error') {
+      <mat-card
+        appearance="outlined"
+        class="home__error"
+      >
+        <mat-card-content>
+          <mat-icon>error_outline</mat-icon>
+
+          <span>Failed to load dashboard data. Please try again later.</span>
+        </mat-card-content>
+      </mat-card>
+    }
+
+    @default {
+      <div class="home__state">
+        <mat-spinner diameter="40" />
+      </div>
+    }
+  }
+</div>

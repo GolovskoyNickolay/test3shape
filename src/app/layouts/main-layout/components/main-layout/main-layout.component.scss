@@ -1,0 +1,15 @@
+:host {
+  height: 100%;
+}
+
+.main-layout {
+  height: 100%;
+
+  &__sidenav {
+    border-right: 1px solid #d8d8d8;
+    width: 240px;
+  }
+
+  &__content {
+  }
+}

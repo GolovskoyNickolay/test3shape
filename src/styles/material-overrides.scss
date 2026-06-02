@@ -1,0 +1,14 @@
+@use '@angular/material' as mat;
+
+html {
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: #fff,
+    )
+  );
+  @include mat.sidenav-overrides(
+    (
+      content-background-color: #fff,
+    )
+  );
+}
