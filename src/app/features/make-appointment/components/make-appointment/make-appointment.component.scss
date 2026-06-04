@@ -1,0 +1,47 @@
+:host {
+  display: block;
+  padding: 0 32px 16px 32px;
+}
+.mdc-linear-progress {
+  top: -10px;
+}
+.appointment {
+  &__title {
+    margin: 0;
+    padding: 16px 0 16px 0;
+    font-weight: 500;
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  &__full {
+    grid-column: 1 / -1;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+  }
+}
+
+
+
+mat-form-field {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .appointment__grid {
+    grid-template-columns: 1fr;
+  }
+}

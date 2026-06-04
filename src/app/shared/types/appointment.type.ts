@@ -1,5 +1,3 @@
-export type AppointmentStatus = 'scheduled' | 'completed' | 'cancelled'
-
 export interface AppointmentType {
   id: number
   patientName: string
@@ -11,3 +9,10 @@ export interface AppointmentType {
 }
 
 export type NewAppointment = Omit<AppointmentType, 'id'>
+
+
+export enum AppointmentStatus {
+  Completed = 'completed',
+  Scheduled = 'scheduled',
+  Cancelled = 'cancelled',
+}

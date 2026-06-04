@@ -13,6 +13,11 @@ export const routes: Routes = [
         title: 'Home',
         loadChildren: () => import('@/app/features/home/home.routes').then((m) => m.homeRoutes),
       },
+      {
+        path: 'make-appointment',
+        title: 'Make appointment',
+        loadChildren: () => import('@/app/features/make-appointment/make-appointment.routes').then((m) => m.makeAppointmentRoutes),
+      },
     ],
   },
   { path: '**', redirectTo: '' },

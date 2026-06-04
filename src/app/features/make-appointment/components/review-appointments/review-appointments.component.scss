@@ -1,0 +1,71 @@
+.appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.appointment {
+  &__card {
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--mat-sys-surface);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__patient {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+  }
+
+  &__email,
+  &__phone {
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &__icon {
+       color: var(--mat-sys-primary);
+    }
+  }
+
+  &__reason {
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}

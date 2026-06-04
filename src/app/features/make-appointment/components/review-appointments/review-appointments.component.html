@@ -1,0 +1,102 @@
+@switch (status()) {
+  @case ('loaded') {
+
+    <mat-tab-group>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          {{ AppointmentStatus.Scheduled | titlecase }}
+        </ng-template>
+        <ng-container *ngTemplateOutlet="appointmentTpl; context: { list: scheduled() }"></ng-container>
+      </mat-tab>
+    
+      <mat-tab>
+        <ng-template mat-tab-label>
+          {{ AppointmentStatus.Completed | titlecase }}
+        </ng-template>
+        <ng-container *ngTemplateOutlet="appointmentTpl; context: { list: completed() }"></ng-container>
+      </mat-tab>
+    
+      <mat-tab>
+        <ng-template mat-tab-label>
+          {{ AppointmentStatus.Cancelled | titlecase }}
+        </ng-template>
+        <ng-container *ngTemplateOutlet="appointmentTpl; context: { list: cancelled() }"></ng-container>
+      </mat-tab>
+    </mat-tab-group>
+    
+    
+    <ng-template #appointmentTpl let-list="list">
+    
+      <div class="appointments">
+    
+        <mat-card *ngFor="let appointment of list" class="appointment__card">
+    
+          <div class="appointment__header">
+    
+            <div class="appointment__patient">
+    
+              <div class="appointment__name">
+                <mat-icon class="appointment__row__icon">person</mat-icon>
+                {{ appointment.patientName }}
+              </div>
+    
+              <div class="appointment__email">
+                {{ appointment.patientEmail }}
+              </div>
+    
+              <div class="appointment__phone">
+                {{ appointment.patientPhone }}
+              </div>
+    
+            </div>
+    
+          </div>
+    
+          <mat-divider></mat-divider>
+    
+          <div class="appointment__body">
+    
+            <div class="appointment__row">
+              <mat-icon class="appointment__row__icon">event</mat-icon>
+              {{ appointment.scheduledAt | date:'dd.MM.yyyy' }}
+            </div>
+    
+            <div class="appointment__row">
+              <mat-icon class="appointment__row__icon">schedule</mat-icon>
+              {{ appointment.scheduledAt | date:'HH:mm' }}
+            </div>
+    
+            <div class="appointment__row appointment__reason">
+              <mat-icon class="appointment__row__icon">medical_services</mat-icon>
+              {{ appointment.reason }}
+            </div>
+    
+          </div>
+    
+        </mat-card>
+    
+      </div>
+    
+    </ng-template>
+
+  }
+
+  @case ('error') {
+    <mat-card
+      appearance="outlined"
+      class="home__error"
+    >
+      <mat-card-content>
+        <mat-icon>error_outline</mat-icon>
+
+        <span>Failed to load dashboard data. Please try again later.</span>
+      </mat-card-content>
+    </mat-card>
+  }
+
+  @default {
+    <div class="loader">
+      <mat-spinner diameter="40" />
+    </div>
+  }
+}

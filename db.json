@@ -15,7 +15,7 @@
   },
   "appointments": [
     {
-      "id": 1,
+      "id": "1",
       "patientName": "John Doe",
       "patientPhone": "+1 (555) 234-5678",
       "patientEmail": "john.doe@example.com",
@@ -24,7 +24,7 @@
       "status": "completed"
     },
     {
-      "id": 2,
+      "id": "2",
       "patientName": "Jane Smith",
       "patientPhone": "+1 (555) 345-6789",
       "patientEmail": "jane.smith@example.com",
@@ -33,7 +33,7 @@
       "status": "scheduled"
     },
     {
-      "id": 3,
+      "id": "3",
       "patientName": "Michael Brown",
       "patientPhone": "+1 (555) 456-7890",
       "patientEmail": "michael.brown@example.com",
@@ -42,7 +42,7 @@
       "status": "scheduled"
     },
     {
-      "id": 4,
+      "id": "4",
       "patientName": "Emily Davis",
       "patientPhone": "+1 (555) 567-8901",
       "patientEmail": "emily.davis@example.com",
@@ -51,7 +51,7 @@
       "status": "scheduled"
     },
     {
-      "id": 5,
+      "id": "5",
       "patientName": "Robert Wilson",
       "patientPhone": "+1 (555) 678-9012",
       "patientEmail": "robert.wilson@example.com",
@@ -60,13 +60,176 @@
       "status": "scheduled"
     },
     {
-      "id": 6,
+      "id": "6",
       "patientName": "Olivia Martin",
       "patientPhone": "+1 (555) 789-0123",
       "patientEmail": "olivia.martin@example.com",
       "scheduledAt": "2026-05-08T12:00:00Z",
       "reason": "Teeth whitening",
       "status": "cancelled"
+    },
+    {
+      "patientName": "Mykola",
+      "patientPhone": "123123",
+      "patientEmail": "12312@mailk.com",
+      "scheduledAt": "",
+      "reason": "cool",
+      "status": "scheduled",
+      "id": "ME8x6Xp-xdg"
+    },
+    {
+      "patientName": "",
+      "patientPhone": "",
+      "patientEmail": "",
+      "scheduledAt": "",
+      "reason": "",
+      "status": "scheduled",
+      "id": "1kMMlaj-rCs"
+    },
+    {
+      "patientName": "",
+      "patientPhone": "",
+      "patientEmail": "",
+      "scheduledAt": "",
+      "reason": "",
+      "status": "scheduled",
+      "id": "Du_mlS7-XEs"
+    },
+    {
+      "patientName": "",
+      "patientPhone": "",
+      "patientEmail": "",
+      "scheduledAt": "",
+      "reason": "",
+      "status": "scheduled",
+      "id": "wG8-Xrshppo"
+    },
+    {
+      "patientName": "",
+      "patientPhone": "",
+      "patientEmail": "",
+      "scheduledAt": "",
+      "reason": "",
+      "status": "scheduled",
+      "id": "N6Hf5h4V3GU"
+    },
+    {
+      "patientName": "Mykola",
+      "patientPhone": "125125125",
+      "patientEmail": "12512@mail.com",
+      "reason": "2qwr",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-10T22:00:00.000Z",
+      "id": "2rGqxQqZOTM"
+    },
+    {
+      "patientName": "qwqwfgg",
+      "patientPhone": "125125",
+      "patientEmail": "121242@mail.com",
+      "reason": "121212t",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-09T22:30:00.000Z",
+      "id": "eKIRgT0SUYA"
+    },
+    {
+      "patientName": "Jack",
+      "patientPhone": "888777888",
+      "patientEmail": "jack@mai.com",
+      "reason": "qwe",
+      "status": "cancelled",
+      "scheduledAt": "2026-06-04T22:00:00.000Z",
+      "id": "NgYCtzBXXvo"
+    },
+    {
+      "patientName": "jack1",
+      "patientPhone": "123123",
+      "patientEmail": "123@mail.com",
+      "reason": "qweqwe",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-12T22:00:00.000Z",
+      "id": "8dfJJH8Mq6I"
+    },
+    {
+      "patientName": "qweqwe111111",
+      "patientPhone": "123124124",
+      "patientEmail": "125125@mail.com",
+      "reason": "QWeqwe",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-18T22:00:00.000Z",
+      "id": "Y0-2CfUcheA"
+    },
+    {
+      "patientName": "wqgqwg",
+      "patientPhone": "123123",
+      "patientEmail": "12312@mail.com",
+      "reason": "qweqwe",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-10T22:30:00.000Z",
+      "id": "S3Kf6qSU-qw"
+    },
+    {
+      "patientName": "1212t12t",
+      "patientPhone": "12t12t",
+      "patientEmail": "qwg1!@mail.com",
+      "reason": "qwgqwg",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-11T23:00:00.000Z",
+      "id": "VEsEl1Ktzws"
+    },
+    {
+      "patientName": "qwfqwf",
+      "patientPhone": "qwf",
+      "patientEmail": "qwg@mail.com",
+      "reason": "wfqwf",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-09T22:30:00.000Z",
+      "id": "DcpjFO0H-Q0"
+    },
+    {
+      "patientName": "qwfqwf",
+      "patientPhone": "qwfqwf",
+      "patientEmail": "qwf@mail.com",
+      "reason": "qwqwg",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-04T22:30:00.000Z",
+      "id": "4qJJCa0VUa4"
+    },
+    {
+      "patientName": "Mykola",
+      "patientPhone": "123123",
+      "patientEmail": "1r12r@mail.com",
+      "reason": "qweqwe",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-11T23:00:00.000Z",
+      "id": "Nv8vGlDSPBA"
+    },
+    {
+      "patientName": "qweqweq5555",
+      "patientPhone": "123123",
+      "patientEmail": "fqwf@mail.com",
+      "reason": "qweqwe",
+      "status": "cancelled",
+      "scheduledAt": "2026-06-12T06:00:00.000Z",
+      "id": "XEbAYVcbCNo"
+    },
+    {
+      "patientName": "qweqwegggg",
+      "patientPhone": "123123",
+      "patientEmail": "123123@mail.com",
+      "reason": "qweqwe",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-04T21:00:00.000Z",
+      "id": "0g98oDepgO4"
+    },
+    {
+      "patientName": "hhhhh",
+      "patientPhone": "6666",
+      "patientEmail": "22@mail.com",
+      "reason": "qweqwe",
+      "status": "scheduled",
+      "scheduledAt": "2026-06-04T21:30:00.000Z",
+      "id": "7SI1Dv2poaM"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
